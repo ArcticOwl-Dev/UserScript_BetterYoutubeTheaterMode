@@ -73,6 +73,8 @@
     mastheadDiv = document.querySelector("#masthead-container.ytd-app");
     if (mastheadDiv) {
       mastheadDiv.classList.add("minUI-theater");
+      /* hides masthead at start */
+      mastheadDiv.classList.remove("showMasthead");
       /* show Youtube header when mouse enter the hidden header div (better then :hover)*/
       mastheadDiv.addEventListener("mouseenter", handleMouseEnter);
       mastheadDiv.addEventListener("mouseleave", handleMouseLeave);
